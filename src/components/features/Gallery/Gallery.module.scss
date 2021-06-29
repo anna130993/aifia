@@ -1,0 +1,72 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  height: 70vh;
+
+  .photoWrapper {
+    overflow: hidden;
+    border-radius: $radius;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+
+    .present_img{
+      opacity: 1;
+      transition: 1s $transition;
+    }
+
+    .incoming_img {
+      opacity: 1;
+    }
+
+    &.changing {
+      .present_img {
+        opacity: 0;
+        transition: 1s $transition;
+      }
+    }
+  }
+
+  .dots {
+    width: 100%;
+    border-radius: $radius;
+  }
+
+  .minis {
+    position: relative;
+    margin-top: $base-size/2;
+    margin-bottom: 0;
+    background-color: $secondary;
+    border-radius: $radius;
+
+    &:hover {
+      img{
+        opacity: 1;
+      }
+    }
+
+    img {
+      height: 100px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: $radius;
+      opacity: 0.7;
+      transition: 0.5s $transition;
+    }
+
+    &.active {
+      img {
+        opacity: 1;
+      }
+    }
+
+    .minis + .minis {
+      margin-left: $base-size/2;
+    }
+  }
+}
