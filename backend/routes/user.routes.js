@@ -2,12 +2,12 @@ const express = require('express');
 const router = express.Router();
 
 const isLogged = (req, res, next) => {
-  if(req.user) {
-    next();
+  if(!req.user) {
+    res.redirect('/user/no-entry');
   } else {
-    res.status(401).send({message: 'You need to create an account in order to proceed'});
+    next();
   }
-}
+};
 
 router.get('/no-entry', (req, res) => {
   res.send('You shall not pass!');

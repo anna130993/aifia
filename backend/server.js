@@ -4,7 +4,7 @@ const path = require('path');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
 const passport = require('passport');
-const session = reuire('express-session');
+const session = require('express-session');
 
 const productsRoutes = require('./routes/products.routes');
 const ordersRoutes = require('./routes/orders.routes');

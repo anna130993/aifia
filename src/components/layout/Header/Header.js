@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Link from '@material-ui/core/Link';
 import Tooltip from '@material-ui/core/Tooltip';
-import Button from '@material-ui/core/Button';
+//import Button from '@material-ui/core/Button';
 import {Link as RouterLink} from 'react-router-dom';
 import Navigation from '../../features/Navigation/Navigation';
 import MainMenu from '../../features/MainMenu/MainMenu';
@@ -22,9 +22,6 @@ const Header = () => {
             </Link>
           </Tooltip>
           <MainMenu />
-          <Button variant='contained' color='primary' href='/auth/google'>
-            Sign in with Google
-          </Button>
           <Navigation className={styles.nav} />
         </Toolbar>
       </AppBar>

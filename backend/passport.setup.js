@@ -6,7 +6,7 @@ passport.use(new GoogleStrategy({
   clientSecret: process.env.clientSecret,
   callbackURL: process.env.callbackURL,
 }, (accessToken, refreshToken, profile, done) => {
-    done(null, profile);
+  done(null, profile);
 }));
 
 passport.serializeUser((user, serialize) => {
