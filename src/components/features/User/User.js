@@ -1,6 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Facebook from '../Facebook/Facebook';
+import Google from '../Google/Google';
 import styles from './User.module.scss';
 
 const User = () => (
@@ -9,6 +10,7 @@ const User = () => (
       To create account, please authenticate with one of the following:
     </Typography>
     <Typography align='center' paragraph>
+      <Google />
       <Facebook />
     </Typography>
   </section>
