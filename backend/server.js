@@ -3,25 +3,17 @@ const cors = require('cors');
 const path = require('path');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
-const passport = require('passport');
 const session = require('express-session');
 
 const productsRoutes = require('./routes/products.routes');
 const ordersRoutes = require('./routes/orders.routes');
-const authRoutes = require('./routes/auth.routes');
-const userRoutes = require('./routes/user.routes');
 
-const loadInitData = require('./initData');
-const passportSetup = require('./passport.setup');
+const loadInitData = require('./data/initData');
 
 const app = express();
 
 /* Init session */
 app.use(session({secret: 'anything'}));
-
-/*Init passport */
-app.use(passport.initialize());
-app.use(passport.session());
 
 /*Add middleware */
 app.use(cors());
@@ -33,16 +25,13 @@ app.use(helmet());
 app.use('/api', productsRoutes);
 app.use('/api', ordersRoutes);
 
-app.use('/auth', authRoutes);
-app.use('/user', userRoutes);
-
 /* API error pages */
 app.use('/api', (req, res) => {
   res.status(404).send({message: 'Page not found'});
 });
 
 /* React website build */
-app.use(express.static(path.join(__dirname, '../build')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });

@@ -33,8 +33,7 @@ const MainMenu = () => {
       <Menu id='main-menu' anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={handleClose}><Link color='inherit' variant='subtitle2' component={RouterLink} to='/about'>About</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link color='inherit' variant='subtitle2' component={RouterLink} to='/privacy-policy'>Privacy policy</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link color='inherit' variant='subtitle2' component={RouterLink} to='/user'>User account</Link></MenuItem>
-        <MenuItem onClick={handleClose}>Sign out</MenuItem>
+        <MenuItem onClick={handleClose}></MenuItem>
       </Menu>
     </div>
   );

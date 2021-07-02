@@ -14,7 +14,6 @@ import Order from './components/views/Order/Order';
 import About from './components/features/About/About';
 import StepperShop from './components/layout/StepperShop/StepperShop';
 import PP from './components/features/PP/PP';
-import User from './components/features/User/User';
 
 const theme = createMuiTheme({
   palette: {
@@ -38,7 +37,6 @@ const App = () => (
               <Route exact path='/' component={Home} />
               <Route exact path='/about' component={About} />
               <Route exact path='/privacy-policy' component={PP} />
-              <Route exact path='/user' component={User} />
               <Route exact path='/products/:id' component={Product} />
               <StepperShop>
                 <Route exact path='/cart' component={Cart} />

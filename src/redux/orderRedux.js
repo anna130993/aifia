@@ -12,11 +12,6 @@ export const getCount = ({order}) => {
   }
   return count;
 };
-export const incrementProds = ({order}, id, amount) => {
-  const product = order.data.products.find(p => p.id === id);
-  if (product) return product.amount + amount <= 30;
-  else return true;
-};
 
 /*ACTION NAME CREATOR */
 const reducerName = 'order';
