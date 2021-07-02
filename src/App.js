@@ -14,6 +14,11 @@ import Order from './components/views/Order/Order';
 import About from './components/features/About/About';
 import StepperShop from './components/layout/StepperShop/StepperShop';
 import PP from './components/features/PP/PP';
+import TC from './components/features/TC/TC';
+import Size from './components/features/Size/Size';
+import Payment from './components/features/Payment/Payment';
+import Shipping from './components/features/Shipping/Shipping';
+import Returns from './components/features/Returns/Returns';
 
 const theme = createMuiTheme({
   palette: {
@@ -37,6 +42,11 @@ const App = () => (
               <Route exact path='/' component={Home} />
               <Route exact path='/about' component={About} />
               <Route exact path='/privacy-policy' component={PP} />
+              <Route exact path='/terms-and-conditions' component={TC} />
+              <Route exact path='/payment-options' component={Payment} />
+              <Route exact path='/size-guide' component={Size} />
+              <Route exact path='/shipping' component={Shipping} />
+              <Route exact path='/returns' component={Returns} />
               <Route exact path='/products/:id' component={Product} />
               <StepperShop>
                 <Route exact path='/cart' component={Cart} />

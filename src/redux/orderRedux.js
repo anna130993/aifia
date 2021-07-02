@@ -142,6 +142,7 @@ export const reducer = (statePart = [], action = {}) => {
           firstName: '',
           lastName: '',
           email: '',
+          phone: '',
           address: '',
         },
         request: {

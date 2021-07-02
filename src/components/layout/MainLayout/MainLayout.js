@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 import Container from '@material-ui/core/Container';
 
@@ -13,6 +14,7 @@ const MainLayout = ({children}) => (
     <Container className={styles.container}>
       {children}
     </Container>
+    <Footer />
   </div>
 );
 

@@ -8,6 +8,7 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Snackbar from '@material-ui/core/Snackbar';
 import Alert from '@material-ui/lab/Alert';
+import PhoneModel from '../../common/PhoneModel/PhoneModel';
 import styles from './Contact.module.scss';
 
 const Contact = () => {
@@ -19,6 +20,7 @@ const Contact = () => {
     firstName: '',
     lastName: '',
     email: '',
+    phone: '',
     address: '',
   });
 
@@ -50,6 +52,10 @@ const Contact = () => {
     email: {
       val: value => value && value.match(new RegExp(/^[-a-z0-9~!$%^&*_=+}{'?]+(\.[-a-z0-9~!$%^&*_=+}{'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.([a-z]{1,6}))$/i)),
       message: 'Invalid email address! Try again!',
+    },
+    phone: {
+      val: value => value && 5 <= value.length && value.length <= 15,
+      message: 'Invalid phone number! Try again!',
     },
     address: {
       val: value => value && 3 <= value.length && value.length <= 80,
@@ -107,6 +113,7 @@ const Contact = () => {
           </Grid>
           <Grid item container xs={12} sm={6} direction='column' justify='flex-start'>
             <TextField id='email' name='email' label='Email address' variant='outlined' fullWidth margin='normal' value={order.email} onChange={handleChange} error={!!errors.email} helperText={errors.email} required/>
+            <TextField id='phone' name='phone' label='Phone number' variant='outlined' fullWidth margin='normal' value={order.phone} onChange={handleChange} error={!!errors.phone} helperText={errors.phone} required InputProps={{inputComponent: PhoneModel}}/>
             <TextField id='address' name='address' label='Delivery address' multiline rows={3} variant='outlined' fullWidth margin='normal' value={order.address} onChange={handleChange} error={!!errors.address} helperText={errors.address} required inputProps={{autoComplete: 'new-password', maxLength: 50}}/>
           </Grid>
         </Grid>

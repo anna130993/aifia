@@ -26,6 +26,12 @@ const orderSchema = new Schema({
     required: true,
     match: new RegExp(/^[-a-z0-9~!$%^&*_=+}{'?]+(\.[-a-z0-9~!$%^&*_=+}{'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.([a-z]{1,6}))$/i),
   },
+  phone: {
+    type: String,
+    required: true,
+    minLength: 5,
+    maxLength: 15,
+  },
   address: {
     type: String,
     required: true,
