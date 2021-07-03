@@ -8,6 +8,8 @@ import Tooltip from '@material-ui/core/Tooltip';
 import {Link as RouterLink} from 'react-router-dom';
 import Navigation from '../../features/Navigation/Navigation';
 import MainMenu from '../../features/MainMenu/MainMenu';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPaintBrush} from '@fortawesome/free-solid-svg-icons';
 
 import styles from './Header.module.scss';
 
@@ -19,6 +21,8 @@ const Header = () => {
           <Tooltip label='Homepage'>
             <Link component={RouterLink} to='/' variant='h4' className={styles.title} color='inherit' underline='none'>
             Art Is Fashion Is Art
+              {'  '}
+              <FontAwesomeIcon icon={faPaintBrush} />
             </Link>
           </Tooltip>
           <MainMenu />

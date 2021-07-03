@@ -1,8 +1,23 @@
 @import '../../../styles/settings.scss';
 
 .root{
-  .appBar {
+  display: inline-block;
+  width: 100%;
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     top: auto;
-    bottom: 0;
+    background: $secondary;
+    color: $white;
+  }
+  .single {
+    padding: 30px;
+    max-width: 350px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
   }
 }
