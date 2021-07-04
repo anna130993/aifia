@@ -42,7 +42,7 @@ export const addComment = payload => ({payload, type: ADD_COMMENT});
 /*THUNK*/
 export const sendOrder = (orderData) => {
   return async dispatch => {
-    dispatch(startRequest('SUBMIT'));
+    dispatch(startRequest('POST'));
     try {
       const res = await axios.post(`${API_URL}/api/orders`, orderData);
       dispatch(savedOrder(res.data));

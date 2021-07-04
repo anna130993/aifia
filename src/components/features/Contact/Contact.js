@@ -113,7 +113,7 @@ const Contact = () => {
           </Grid>
           <Grid item container xs={12} sm={6} direction='column' justify='flex-start'>
             <TextField id='email' name='email' label='Email address' variant='outlined' fullWidth margin='normal' value={order.email} onChange={handleChange} error={!!errors.email} helperText={errors.email} required/>
-            <TextField id='phone' name='phone' label='Phone number' variant='outlined' fullWidth margin='normal' value={order.phone} onChange={handleChange} error={!!errors.phone} helperText={errors.phone} required InputProps={{inputComponent: PhoneModel}}/>
+            <TextField id='phone' name='phone' label='Phone number' variant='outlined' fullWidth margin='normal' value={order.phone} onChange={handleChange} error={!!errors.phone} helperText={errors.phone} InputProps={{inputComponent: PhoneModel}} required/>
             <TextField id='address' name='address' label='Delivery address' multiline rows={3} variant='outlined' fullWidth margin='normal' value={order.address} onChange={handleChange} error={!!errors.address} helperText={errors.address} required inputProps={{autoComplete: 'new-password', maxLength: 50}}/>
           </Grid>
         </Grid>
