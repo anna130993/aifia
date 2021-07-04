@@ -18,7 +18,7 @@ const Header = () => {
     <div className={styles.root}>
       <AppBar position='fixed' component='div' color='secondary'>
         <Toolbar className={styles.toolbar}>
-          <Tooltip label='Homepage'>
+          <Tooltip title='Homepage'>
             <Link component={RouterLink} to='/' variant='h4' className={styles.title} color='inherit' underline='none'>
             Art Is Fashion Is Art
               {'  '}

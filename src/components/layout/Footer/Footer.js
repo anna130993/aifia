@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import Tooltip from '@material-ui/core/Tooltip';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -56,34 +55,22 @@ const Footer = () => {
           <Grid item xs={12} sm={4} className={styles.single}>
             <Typography>Get more AIFIA on:</Typography>
             <Button>
-              <Tooltip label='Facebook'>
-                <FontAwesomeIcon icon={faFacebookF} />
-              </Tooltip>
+              <FontAwesomeIcon icon={faFacebookF} />
             </Button>
             <Button>
-              <Tooltip label='Twitter'>
-                <FontAwesomeIcon icon={faTwitter} />
-              </Tooltip>
+              <FontAwesomeIcon icon={faTwitter} />
             </Button>
             <Button>
-              <Tooltip label='Instagram'>
-                <FontAwesomeIcon icon={faInstagram} />
-              </Tooltip>
+              <FontAwesomeIcon icon={faInstagram} />
             </Button>
             <Button>
-              <Tooltip label='Youtube'>
-                <FontAwesomeIcon icon={faYoutube} />
-              </Tooltip>
+              <FontAwesomeIcon icon={faYoutube} />
             </Button>
             <Button>
-              <Tooltip label='Pinterest'>
-                <FontAwesomeIcon icon={faPinterestP} />
-              </Tooltip>
+              <FontAwesomeIcon icon={faPinterestP} />
             </Button>
             <Button>
-              <Tooltip label='Tumblr'>
-                <FontAwesomeIcon icon={faTumblr} />
-              </Tooltip>
+              <FontAwesomeIcon icon={faTumblr} />
             </Button>
           </Grid>
         </Grid>

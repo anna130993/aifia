@@ -15,7 +15,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Collapse from '@material-ui/core/Collapse';
 import TextField from '@material-ui/core/TextField';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Tooltip from '@material-ui/core/Tooltip';
 import Link from '@material-ui/core/Link';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTrash, faPlus, faMinus, faComment, faArrowUp} from '@fortawesome/free-solid-svg-icons';
@@ -88,17 +87,17 @@ const Cart = () => {
                     <TableCell align='right'>
                       {!comment &&
                       <IconButton aria-label='toggle comment visibility' onClick={() => toggleActivity(id)}>
-                        {activeComments.includes(id) ? <Tooltip title='Hide comment'><FontAwesomeIcon icon={faArrowUp} /></Tooltip> : <Tooltip title='Show/add comments'><FontAwesomeIcon icon={faComment} /></Tooltip>}
+                        {activeComments.includes(id) ? <FontAwesomeIcon icon={faArrowUp} /> : <FontAwesomeIcon icon={faComment} />}
                       </IconButton>}
                       <IconButton aria-label='remove product' onClick={() => dispatch(removeProduct(id))}>
-                        <Tooltip title='Remove product from cart'><FontAwesomeIcon icon={faTrash} /></Tooltip>
+                        <FontAwesomeIcon icon={faTrash} />
                       </IconButton>
                     </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className={styles.collapse} colSpan={4}>
                       <Collapse in={!!comment || activeComments.includes(id)} timeout='auto'>
-                        <TextField id={id} name={`${id}-comment`} placeholder='Add comment' fullWidth multiline inputProps={{maxlength: 200}} variant='outlined' autoComplete='off' value={comment} onChange={commentChangeHandler} />
+                        <TextField id={id} name={`${id}-comment`} placeholder='Add comment' fullWidth multiline inputProps={{maxLength: 200}} variant='outlined' autoComplete='off' value={comment} onChange={commentChangeHandler} />
                       </Collapse>
                     </TableCell>
                   </TableRow>
