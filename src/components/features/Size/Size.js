@@ -4,8 +4,8 @@ import styles from './Size.module.scss';
 
 const Size = () => (
   <section className={styles.root}>
-    <Typography component='h1' variant='h4' align='center' paragraph>
-      Size guide
+    <Typography variant='h4' align='center' paragraph className={styles.text}>
+      <h1>Size guide</h1>
     </Typography>
     <Typography align='center' paragraph>
       I will be a size chart table one day - still under construction!

@@ -4,8 +4,8 @@ import styles from './Returns.module.scss';
 
 const Returns = () => (
   <section className={styles.root}>
-    <Typography component='h1' variant='h4' align='center' paragraph>
-      Returns and exchanges
+    <Typography variant='h4' align='center' paragraph className={styles.text}>
+      <h1>Returns and exchanges</h1>
     </Typography>
     <Typography align='center' paragraph>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa tellus, faucibus scelerisque scelerisque bibendum, convallis luctus lectus. Mauris id porttitor sem. Fusce laoreet consequat magna, sit amet tincidunt massa laoreet ullamcorper. Integer interdum ornare lacus, ut bibendum ligula semper vel. Vivamus fringilla neque eu nulla luctus tempor eu in neque. Duis id arcu in sapien sollicitudin pulvinar id sit amet justo. Nullam hendrerit hendrerit fringilla.

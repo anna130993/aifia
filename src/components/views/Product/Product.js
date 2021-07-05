@@ -59,6 +59,15 @@ const Product = () => {
               {description}
             </Typography>
           </Grid>
+          <Grid item xs>
+            <Typography paragraph variant='h6' className={styles.text}>
+              Currently available paintings (in order of appearance): <br />
+              - Jean-Honore Fragonard - The Swing, <br />
+              - Vincent Van Gogh - Starry Night, <br />
+              - Sandro Botticelli - The Spring, <br />
+              - Eugene Delacroix - Liberty Leading The People.
+            </Typography>
+          </Grid>
           <Grid item>
             <Typography variant='h5' className={styles.text}>
             Prices start up from <strong>${startPrice}</strong> and depends on a specific print and size.

@@ -27,10 +27,7 @@ const loadInitData = async() => {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id lobortis metus, in malesuada lacus. Proin id ornare diam. Nullam sed arcu eget metus venenatis vulputate. Pellentesque consequat ante id eros lobortis porta. Duis ut sagittis lorem, sit amet porta sapien. Proin et maximus est. Donec quis finibus diam, sed auctor arcu. Duis aliquet nunc ut arcu vehicula, in molestie lorem lobortis. Phasellus lobortis tristique blandit.',
       startPrice: 75,
       photos: [{
-        name: 'Base - white shirt, variant 1',
-        src: 'https://images.pexels.com/photos/3810561/pexels-photo-3810561.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-      },{
-        name: 'Base - white shirt, variant 2',
+        name: 'Base - white shirt',
         src: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       },{
         name: 'Fragonard - Swing',

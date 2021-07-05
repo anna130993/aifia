@@ -5,7 +5,7 @@ import styles from './PP.module.scss';
 
 const PP = () => (
   <section className={styles.root}>
-    <Typography component='h1' variant='h4' align='center' paragraph>
+    <Typography variant='h4' align='center' paragraph className={styles.text}>
       <h1>Privacy Policy</h1>
     </Typography>
     <Typography align='center' paragraph>

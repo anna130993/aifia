@@ -1,5 +1,10 @@
 @import '../../../styles/settings.scss';
 
 .root {
-
+  padding: $base-size;
+  .text {
+    text-transform: uppercase;
+    margin-right: auto;
+    font-family: 'Playfair Display', serif;
+  }
 }
