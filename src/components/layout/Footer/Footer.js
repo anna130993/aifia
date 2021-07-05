@@ -18,58 +18,58 @@ const Footer = () => {
       <footer className={styles.footer}>
         <Grid container>
           <Grid item xs={12} sm={4} className={styles.single}>
-            <Typography variant='h6'>Info</Typography>
-            <Box>
+            <Typography variant='h6' className={styles.text}>Info</Typography>
+            <Box className={styles.text}>
               <Link color='inherit' component={RouterLink} to='/about'>About</Link>
             </Box>
-            <Box>
+            <Box className={styles.text}>
               <Link color='inherit' component={RouterLink} to='/privacy-policy'>Privacy policy</Link>
             </Box>
-            <Box>
+            <Box className={styles.text}>
               <Link color='inherit' component={RouterLink} to='/terms-and-conditions'>Terms and conditions</Link>
             </Box>
-            <Box>
+            <Box className={styles.text}>
               <Link color='inherit' component={RouterLink} to='/size-guide'>Size guide</Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={4} className={styles.single}>
-            <Typography variant='h6'>Order info</Typography>
-            <Box>
+            <Typography variant='h6' className={styles.text}>Order info</Typography>
+            <Box className={styles.text}>
               <Link color='inherit' component={RouterLink} to='/payment-options'>Payment options</Link>
             </Box>
-            <Box>
+            <Box className={styles.text}>
               <Link color='inherit' component={RouterLink} to='/shipping'>Shipping and delivery</Link>
             </Box>
-            <Box>
+            <Box className={styles.text}>
               <Link color='inherit' component={RouterLink} to='/returns'>Returns and exchanges</Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={4} className={styles.single}>
-            <Typography variant='h6'>AIFIA Store</Typography>
-            <Box>
+            <Typography variant='h6' className={styles.text}>AIFIA Store</Typography>
+            <Box className={styles.text}>
               Oxford St. 252-258
               <br />
               W1C 1DL London
             </Box>
           </Grid>
           <Grid item xs={12} sm={4} className={styles.single}>
-            <Typography>Get more AIFIA on:</Typography>
-            <Button>
+            <Typography className={styles.text}>Get more AIFIA on:</Typography>
+            <Button href='http://facebook.com'>
               <FontAwesomeIcon icon={faFacebookF} />
             </Button>
-            <Button>
+            <Button href='http://twitter.com'>
               <FontAwesomeIcon icon={faTwitter} />
             </Button>
-            <Button>
+            <Button href='http://instagram.com'>
               <FontAwesomeIcon icon={faInstagram} />
             </Button>
-            <Button>
+            <Button href='http://youtube.com'>
               <FontAwesomeIcon icon={faYoutube} />
             </Button>
-            <Button>
+            <Button href='http://pinterest.com'>
               <FontAwesomeIcon icon={faPinterestP} />
             </Button>
-            <Button>
+            <Button href='http://tumblr.com'>
               <FontAwesomeIcon icon={faTumblr} />
             </Button>
           </Grid>

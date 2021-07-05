@@ -96,7 +96,7 @@ const Contact = () => {
       setWarning(false);
       setPending(true);
 
-      const orderProds = order.products.map(({id, amount, comment}) => comment ? ({product: id, amount, comment}) : ({product: id, amount}));
+      const orderProds = order.products.map(({id, amount, size, comment}) => comment ? ({product: id, amount, size, comment}) : ({product: id, amount, size}));
 
       dispatch(sendOrder({...order, status: 'ordered', products: orderProds}));
     } else setWarning(true);

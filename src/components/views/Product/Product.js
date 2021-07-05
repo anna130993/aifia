@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import { getPresent, fetchSingle, getRequest } from '../../../redux/productsRedux';
 import {useParams, Link as RouterLink} from 'react-router-dom';
-import {addProduct } from '../../../redux/orderRedux';
+import {addProduct} from '../../../redux/orderRedux';
 
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Grid from '@material-ui/core/Grid';
@@ -23,6 +23,7 @@ const Product = () => {
   const request = useSelector(getRequest);
   const product = useSelector(state => getPresent(state, id));
   const [amount, setAmount] = useState(1);
+  const [size, setSize] = useState(36);
   const [update, setUpdate] = useState(false);
 
   useEffect(() => {
@@ -38,14 +39,14 @@ const Product = () => {
 
   const handleAdd = () => {
     setUpdate(true);
-    dispatch(addProduct({id, name, startPrice, amount, comment: ''}));
+    dispatch(addProduct({id, name, startPrice, amount, size, comment: ''}));
   };
 
   return (
     <Paper component='article' className={styles.root}>
       <Grid container spacing={4}>
         <Grid item xs={12}>
-          <Typography variant='h5' component='h1' align='center'>
+          <Typography variant='h3' align='center' className={styles.text}>
             {name}
           </Typography>
         </Grid>
@@ -54,21 +55,24 @@ const Product = () => {
         </Grid>
         <Grid item xs={12} md={6} container spacing={2} direction='column' justify='flex-end'>
           <Grid item xs>
-            <Typography paragraph>
+            <Typography paragraph variant='h6' className={styles.text}>
               {description}
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant='h5' component='h2'>
+            <Typography variant='h5' className={styles.text}>
             Prices start up from <strong>${startPrice}</strong> and depends on a specific print and size.
             </Typography>
-            <Typography paragraph>
-            To find out your definite price, please contact us!
+            <Typography paragraph className={styles.text}>
+            To find out your definite price, please contact us! Remember to specify your painting of choice in order comment!
             </Typography>
           </Grid>
           <Grid item container alignItems='stretch' spacing={2}>
             <Grid item>
               <TextField variant='outlined' type='number' size='small' className={styles.input} value={amount} onChange={({target}) => setAmount(parseInt(target.value))} inputProps={{min: 1, max: 30}} />
+            </Grid>
+            <Grid item>
+              <TextField variant='outlined' type='number' size='small' className={styles.input} value={size} onChange={({target}) => setSize(parseInt(target.value))} inputProps={{min: 34, max: 44}} />
             </Grid>
             <Grid item>
               <Button variant='outlined' onClick={handleAdd} size='large'>Add to cart</Button>

@@ -56,12 +56,13 @@ const Cart = () => {
               {sm && <TableHead>
                 <TableRow>
                   <TableCell>Product</TableCell>
+                  <TableCell align='center'>Size</TableCell>
                   <TableCell align='center'>Amount</TableCell>
                   <TableCell align='center'>Total</TableCell>
                   <TableCell align='center'>Actions</TableCell>
                 </TableRow>
               </TableHead>}
-              {products.map(({id, name, startPrice, amount, comment}) => (
+              {products.map(({id, name, size, startPrice, amount, comment}) => (
                 <TableBody key={id}>
                   {!sm && <TableRow className={styles.name_row}>
                     <TableCell colSpan={4}>
@@ -72,6 +73,9 @@ const Cart = () => {
                   </TableRow>}
                   <TableRow className={styles.row}>
                     {sm && <TableCell><Typography variant='subtitle2' component={RouterLink} to={`/products/${id}`} className={styles.prod_name}>{name}</Typography></TableCell>}
+                    <TableCell align='center'>
+                      {size}
+                    </TableCell>
                     <TableCell align='center'>
                       <div className={styles.amount} colSpan={sm ? 1 : 2}>
                         <IconButton aria-label='decrement product count' size='small' onClick={() => dispatch(productOutOfCart(id))}>

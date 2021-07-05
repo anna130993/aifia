@@ -8,6 +8,12 @@ const orderItemSchema = new Schema({
     min: 1,
     max: 25,
   },
+  size: {
+    type: Number,
+    default: 36,
+    min: 34,
+    max: 44,
+  },
   comment: {
     type: String,
     maxLength: 350,

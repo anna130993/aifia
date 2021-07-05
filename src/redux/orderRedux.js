@@ -66,7 +66,7 @@ export const reducer = (statePart = [], action = {}) => {
           },
         };
       } else {
-        const newProds = statePart.data.products.map(p => p.id === action.payload.id ? ({...p, amount: p.amount + action.payload.amount}) : p);
+        const newProds = statePart.data.products.map(p => p.id === action.payload.id ? ({...p, amount: p.amount + action.payload.amount, size: action.payload.size}) : p);
         return {
           ...statePart,
           data: {

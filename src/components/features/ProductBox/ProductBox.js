@@ -15,10 +15,10 @@ const ProductBox = ({product: {id, name, mainPhoto, startPrice}}) => (
     <CardActionArea component={RouterLink} to={`/products/${id}`}>
       <CardMedia className={styles.media} src={mainPhoto.src} component='img'/>
       <CardContent className={styles.content}>
-        <Typography variant="h5" component="h2" noWrap>
+        <Typography variant="h5" noWrap className={styles.text}>
           {name}
         </Typography>
-        <Typography align='right' display='block' variant='overline'>
+        <Typography align='right' display='block' variant='overline' className={styles.text}>
           from ${startPrice}
         </Typography>
       </CardContent>
