@@ -3,7 +3,6 @@ const cors = require('cors');
 const path = require('path');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
-const session = require('express-session');
 
 const productsRoutes = require('./routes/products.routes');
 const ordersRoutes = require('./routes/orders.routes');
@@ -11,9 +10,6 @@ const ordersRoutes = require('./routes/orders.routes');
 const loadInitData = require('./data/initData');
 
 const app = express();
-
-/* Init session */
-app.use(session({secret: 'anything'}));
 
 /*Add middleware */
 app.use(cors());
@@ -31,7 +27,7 @@ app.use('/api', (req, res) => {
 });
 
 /* React website build */
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../build')));
 app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
