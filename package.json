@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "main": "server.js",
+  "homepage": "/",
   "scripts": {
     "start": "run-p start:* ",
     "start-silent": "run-p start > /dev/null",

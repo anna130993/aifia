@@ -33,7 +33,7 @@ app.use('*', (req, res) => {
 });
 
 /* Mongoose */
-mongoose.connect('mongodb://localhost:27017/aifia', {useNewUrlParser: true, useUnifiedTypology: true});
+mongoose.connect('mongodb+srv://anna130993:1M6AuL5FfmVWrWNU@cluster0.jq4ob.mongodb.net/aifia?retryWrites=true&w=majority', {useNewUrlParser: true});
 const db = mongoose.connection;
 db.once('open', () => {
   console.log('Successfully connected to the database');

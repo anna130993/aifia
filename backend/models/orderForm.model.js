@@ -29,6 +29,8 @@ const orderSchema = new Schema({
   phone: {
     type: String,
     required: true,
+    minLength: 5,
+    maxLength: 15,
   },
   address: {
     type: String,
