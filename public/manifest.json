@@ -10,6 +10,7 @@
   ],
   "start_url": "/index.html",
   "display": "standalone",
+  "content_security_policy": "script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
