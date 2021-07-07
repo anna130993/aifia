@@ -26,7 +26,7 @@ BACKEND:
 Either Firebase or Heroku (provided I'll successfully fix the Content Security Policy issue).
 
 # Running project locally
-All you have to do is run `yarn install` and then `yarn start` - it will show you'll be able to see the app in browser (http://localhost:3000) with the server (http://localhost:8000) running in the background!
+All you have to do is run `yarn install` and then `yarn start` - you'll be able to see the app in browser (http://localhost:3000) with the server (http://localhost:8000) running in the background!
 
 ## Available Scripts
 
