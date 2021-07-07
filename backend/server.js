@@ -8,8 +8,11 @@ const productsRoutes = require('./routes/products.routes');
 const ordersRoutes = require('./routes/orders.routes');
 
 const loadInitData = require('./data/initData');
+const dotenv = require('dotenv');
 
 const app = express();
+
+dotenv.config();
 
 /*Add middleware */
 app.use(cors());

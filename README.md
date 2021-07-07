@@ -1,6 +1,32 @@
-# Getting Started with Create React App
+# Art Is Fashion Is Art
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple store app providing custom made clothes with art masterpieces on them - all used paintings are currently available in public domain.
+
+FRONTEND:
+- React,
+- Redux,
+- Material UI,
+- Axios.
+
+BACKEND:
+- Express,
+- MongoDB,
+- Mongoose.
+
+(I am fully aware that for security purposes mongodb atlas password should never be exposed that way - unfortunately, due to quickly impending deadline, I was unable yet to resolve that issue (it regards all Heroku deployment, CSP, the password, dotenv/environmental variables and successfully passing down the string from nodemon.json). It will, however, be my first priority and hopefully, it will be resolved very quickly. :) )
+
+# Planned updates / to-do list
+- fix bug with order's phone number (shows error with no actual error with successfull order),
+- fix bug with sizes - make it so only even numbers are provided,
+- add Select option for provided paintings - so they travel alongside order, size and comment straight to server side,
+- add user verification/registration/logging process via Google and Facebook (using Passport and OAuth),
+- probably many more as well!
+
+# Planned deployment
+Either Firebase or Heroku (provided I'll successfully fix the Content Security Policy issue).
+
+# Running project locally
+All you have to do is run `yarn install` and then `yarn start` - it will show you'll be able to see the app in browser (http://localhost:3000) with the server (http://localhost:8000) running in the background!
 
 ## Available Scripts
 
@@ -29,10 +55,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn start-server`
-
-Starts local server via default port 8000 or a port defined in process env. Plays nice with nodemon.
-
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -42,33 +64,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
