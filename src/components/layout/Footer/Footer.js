@@ -54,22 +54,22 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={4} className={styles.single}>
             <Typography className={styles.text}>Get more AIFIA on:</Typography>
-            <Button href='http://facebook.com'>
+            <Button className={styles.btn} href='http://facebook.com'>
               <FontAwesomeIcon icon={faFacebookF} />
             </Button>
-            <Button href='http://twitter.com'>
+            <Button className={styles.btn} href='http://twitter.com'>
               <FontAwesomeIcon icon={faTwitter} />
             </Button>
-            <Button href='http://instagram.com'>
+            <Button className={styles.btn} href='http://instagram.com'>
               <FontAwesomeIcon icon={faInstagram} />
             </Button>
-            <Button href='http://youtube.com'>
+            <Button className={styles.btn} href='http://youtube.com'>
               <FontAwesomeIcon icon={faYoutube} />
             </Button>
-            <Button href='http://pinterest.com'>
+            <Button className={styles.btn} href='http://pinterest.com'>
               <FontAwesomeIcon icon={faPinterestP} />
             </Button>
-            <Button href='http://tumblr.com'>
+            <Button className={styles.btn} href='http://tumblr.com'>
               <FontAwesomeIcon icon={faTumblr} />
             </Button>
           </Grid>

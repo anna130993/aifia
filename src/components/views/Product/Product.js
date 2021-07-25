@@ -78,10 +78,10 @@ const Product = () => {
           </Grid>
           <Grid item container alignItems='stretch' spacing={2}>
             <Grid item>
-              <TextField variant='outlined' type='number' size='small' className={styles.input} value={amount} onChange={({target}) => setAmount(parseInt(target.value))} inputProps={{min: 1, max: 30}} />
+              <TextField variant='outlined' label='Amount' type='number' size='small' className={styles.input} value={amount} onChange={({target}) => setAmount(parseInt(target.value))} inputProps={{min: 1, max: 30}} />
             </Grid>
             <Grid item>
-              <TextField variant='outlined' type='number' size='small' className={styles.input} value={size} onChange={({target}) => setSize(parseInt(target.value))} inputProps={{min: 34, max: 44}} />
+              <TextField variant='outlined' label='Size' type='number' size='small' className={styles.input} value={size} onChange={({target}) => setSize(parseInt(target.value))} inputProps={{min: 34, max: 44}} />
             </Grid>
             <Grid item>
               <Button variant='outlined' onClick={handleAdd} size='large'>Add to cart</Button>
