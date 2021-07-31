@@ -13,7 +13,7 @@ BACKEND:
 - MongoDB,
 - Mongoose.
 
-(I am fully aware that for security purposes mongodb atlas password should never be exposed that way - unfortunately, due to quickly impending deadline, I was unable yet to resolve that issue (it regards all Heroku deployment, CSP, the password, dotenv/environmental variables and successfully passing down the string from nodemon.json). It will, however, be my first priority and hopefully, it will be resolved very quickly. :) )
+(I am fully aware that for security purposes mongodb atlas password should never be exposed that way - unfortunately, due to quickly impending deadline, I was unable yet to resolve that issue. It will, however, be my first priority and hopefully, it will be resolved very quickly. :) )
 
 # Planned updates / to-do list
 - fix bug with order's phone number (shows error with no actual error with successfull order),
@@ -22,8 +22,8 @@ BACKEND:
 - add user verification/registration/logging process via Google and Facebook (using Passport and OAuth),
 - probably many more as well!
 
-# Planned deployment
-Either Firebase or Heroku (provided I'll successfully fix the Content Security Policy issue).
+# Deployed version
+https://aifia-26139.web.app/ (still needs locally running server in order to show products!)
 
 # Running project locally
 All you have to do is run `yarn install` and then `yarn start` - you'll be able to see the app in browser (http://localhost:3000) with the server (http://localhost:8000) running in the background!
