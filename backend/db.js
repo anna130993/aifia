@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const loadInitData = require('./data/initData');
+const loadInitData = require('./initData');
 
 const connectToDB = (dbUri) => {
   console.log('Connecting to ', dbUri);
