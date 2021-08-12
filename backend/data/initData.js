@@ -8,19 +8,19 @@ const loadInitData = async() => {
       startPrice: 50,
       photos: [{
         name: 'Base - white t-shirt',
-        src: '/images/white-ts.jpeg',
+        src: '../../public/images/white-ts.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '../../public/images/fragonard.jpeg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '../../public/images/vangogh.jpeg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '../../public/images/botticelli.jpeg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '../../public/images/delacroix.jpeg',
       }],
     },{
       name: 'Shirt prints',
@@ -28,19 +28,19 @@ const loadInitData = async() => {
       startPrice: 75,
       photos: [{
         name: 'Base - white shirt',
-        src: '/images/white-shirt.jpeg',
+        src: '../../public/images/white-shirt.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '../../public/images/fragonard.jpeg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '../../public/images/vangogh.jpeg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '../../public/images/botticelli.jpeg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '../../public/images/delacroix.jpeg',
       }],
     },{
       name: 'Dress prints',
@@ -48,19 +48,19 @@ const loadInitData = async() => {
       startPrice: 99,
       photos: [{
         name: 'Base - white dress',
-        src: '/images/white-dress.jpeg',
+        src: '../../public/images/white-dress.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '../../public/images/fragonard.jpeg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '../../public/images/vangogh.jpeg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '../../public/images/botticelli.jpeg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '../../public/images/delacroix.jpeg',
       }],
     },{
       name: 'Hoodie prints',
@@ -68,19 +68,19 @@ const loadInitData = async() => {
       startPrice: 120,
       photos: [{
         name: 'Base - white hoodie',
-        src: '/images/white-hoode.jpeg',
+        src: '../../public/images/white-hoode.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '../../public/images/fragonard.jpeg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '../../public/images/vangogh.jpeg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '../../public/images/botticelli.jpeg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '../../public/images/delacroix.jpeg',
       }],
     },{
       name: 'Leather jacket prints',
@@ -88,19 +88,19 @@ const loadInitData = async() => {
       startPrice: 250,
       photos: [{
         name: 'Base - white leather jacket',
-        src: '/images/white-jacket.jpeg',
+        src: '../../public/images/white-jacket.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '../../public/images/fragonard.jpeg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '../../public/images/vangogh.jpeg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '../../public/images/botticelli.jpeg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '../../public/images/delacroix.jpeg',
       }],
     },
   ];
