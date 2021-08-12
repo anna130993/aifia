@@ -2,17 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const helmet = require('helmet');
-const mongoose = require('mongoose');
-
+const connectToDB = require('./db');
+const {dbURI} = require('./config');
 const productsRoutes = require('./routes/products.routes');
 const ordersRoutes = require('./routes/orders.routes');
 
-const loadInitData = require('./data/initData');
-const dotenv = require('dotenv');
-
 const app = express();
-
-dotenv.config();
 
 /*Add middleware */
 app.use(cors());
@@ -35,14 +30,8 @@ app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'));
 });
 
-/* Mongoose */
-mongoose.connect('mongodb+srv://anna130993:1M6AuL5FfmVWrWNU@cluster0.jq4ob.mongodb.net/aifia?retryWrites=true&w=majority', {useNewUrlParser: true});
-const db = mongoose.connection;
-db.once('open', () => {
-  console.log('Successfully connected to the database');
-  loadInitData();
-});
-db.on('error', err => console.log('Error: ' + err));
+/* Connect to database */
+connectToDB(dbURI);
 
 /* Start server */
 const port = process.env.PORT || 8000;
