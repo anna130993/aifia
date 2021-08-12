@@ -1,5 +1,7 @@
 # Art Is Fashion Is Art
 
+https://whispering-cliffs-74101.herokuapp.com/
+
 Simple store app providing custom made clothes with art masterpieces on them - all used paintings are currently available in public domain.
 
 FRONTEND:
@@ -13,17 +15,12 @@ BACKEND:
 - MongoDB,
 - Mongoose.
 
-(I am fully aware that for security purposes mongodb atlas password should never be exposed that way - unfortunately, due to quickly impending deadline, I was unable yet to resolve that issue. It will, however, be my first priority and hopefully, it will be resolved very quickly. :) )
-
 # Planned updates / to-do list
 - fix bug with order's phone number (shows error with no actual error with successfull order),
 - fix bug with sizes - make it so only even numbers are provided,
 - add Select option for provided paintings - so they travel alongside order, size and comment straight to server side,
 - add user verification/registration/logging process via Google and Facebook (using Passport and OAuth),
 - probably many more as well!
-
-# Deployed version
-https://aifia-26139.web.app/ (still needs locally running server in order to show products!)
 
 # Running project locally
 All you have to do is run `yarn install` and then `yarn start` - you'll be able to see the app in browser (http://localhost:3000) with the server (http://localhost:8000) running in the background!
