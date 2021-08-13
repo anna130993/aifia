@@ -64,7 +64,7 @@ const loadInitData = async() => {
       }],
     },{
       name: 'Hoodie prints',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id lobortis metus, in malesuada lacus. Proin id ornare diam. Nullam sed arcu eget metus venenatis vulputate. Pellentesque consequat ante id eros lobortis porta. Duis ut sagittis lorem, sit amet porta sapien. Proin et maximus est. Donec quis finibus diam, sed auctor arcu. Duis aliquet nunc ut arcu vehicula, in molestie lorem lobortis. Phasellus lobortis tristique blandit.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id lobortis metus, in malesuada lacus. Proin id ornare diam. Nullam sed arcu eget metus venenatis vulputate. Pellentesque consequat ante id eros lobortis porta. Duis ut sagittis lorem, sit amet porta sapien. Proin et maximus est. Donec quis finibus diam, sed auctor arcu. Duis aliquet nunc ut arcu vehicula, in molestie lorem lobortis.',
       startPrice: 120,
       photos: [{
         name: 'Base - white hoodie',
