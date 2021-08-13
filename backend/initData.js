@@ -11,16 +11,16 @@ const loadInitData = async() => {
         src: '/images/white-ts.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '/images/fragonard.jpg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '/images/vangogh.jpg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '/images/botticelli.jpg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '/images/delacroix.jpg',
       }],
     },{
       name: 'Shirt prints',
@@ -31,16 +31,16 @@ const loadInitData = async() => {
         src: '/images/white-shirt.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '/images/fragonard.jpg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '/images/vangogh.jpg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '/images/botticelli.jpg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '/images/delacroix.jpg',
       }],
     },{
       name: 'Dress prints',
@@ -51,16 +51,16 @@ const loadInitData = async() => {
         src: '/images/white-dress.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '/images/fragonard.jpg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '/images/vangogh.jpg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '/images/botticelli.jpg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '/images/delacroix.jpg',
       }],
     },{
       name: 'Hoodie prints',
@@ -71,16 +71,16 @@ const loadInitData = async() => {
         src: '/images/white-hoode.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '/images/fragonard.jpg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '/images/vangogh.jpg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '/images/botticelli.jpg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '/images/delacroix.jpg',
       }],
     },{
       name: 'Leather jacket prints',
@@ -91,16 +91,16 @@ const loadInitData = async() => {
         src: '/images/white-jacket.jpeg',
       },{
         name: 'Fragonard - Swing',
-        src: '/images/fragonard.jpeg',
+        src: '/images/fragonard.jpg',
       },{
         name: 'Van Gogh - Starry Night',
-        src: '/images/vangogh.jpeg',
+        src: '/images/vangogh.jpg',
       },{
         name: 'Botticelli - Spring',
-        src: '/images/botticelli.jpeg',
+        src: '/images/botticelli.jpg',
       },{
         name: 'Delacroix - Liberty Leading the People',
-        src: '/images/delacroix.jpeg',
+        src: '/images/delacroix.jpg',
       }],
     },
   ];
