@@ -27,7 +27,7 @@ export const fetchAll = () => {
   return async(dispatch) => {
     dispatch(startRequest('GET_ALL'));
     try {
-      let res = await axios.get(`${API_URL}/api/products`);
+      let res = await axios.get(`${API_URL}/products`);
       dispatch(allFetched(res.data));
     } catch (e) {
       dispatch(requestError(e.message || true));
@@ -39,7 +39,7 @@ export const fetchSingle = id => {
   return async(dispatch) => {
     dispatch(startRequest('GET_SINGLE'));
     try {
-      let res = await axios.get(`${API_URL}/api/products/${id}`);
+      let res = await axios.get(`${API_URL}/products/${id}`);
       dispatch(singleFetched(res.data));
     } catch (e) {
       dispatch(requestError(e.message || true));

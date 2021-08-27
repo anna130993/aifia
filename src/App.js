@@ -19,6 +19,7 @@ import Size from './components/features/Size/Size';
 import Payment from './components/features/Payment/Payment';
 import Shipping from './components/features/Shipping/Shipping';
 import Returns from './components/features/Returns/Returns';
+import ScrollUp from './components/common/ScrollUp/ScrollUp';
 
 const theme = createMuiTheme({
   palette: {
@@ -34,6 +35,7 @@ const theme = createMuiTheme({
 const App = () => (
   <Provider store={store}>
     <BrowserRouter>
+      <ScrollUp />
       <StylesProvider injectFirst>
         <ThemeProvider theme={theme}>
           <CssBaseline />

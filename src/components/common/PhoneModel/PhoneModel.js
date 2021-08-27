@@ -15,7 +15,7 @@ const PhoneModel = ({className, children, inputRef, name, onChange, ...other}) =
         },
       });
     }}
-    allowNegative={false} isNumericString type='phone' format='+## ### ### ###' mask='_' />
+    allowNegative={false} isNumericString type='phone' format='### ### ###' mask='_' />
 );
 
 PhoneModel.propTypes = {
